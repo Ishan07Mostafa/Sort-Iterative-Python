@@ -3,8 +3,8 @@
 # while the time complexity is O(n^2)
 # it is a rather simple algorithm
 
-def insertionSort(array, n):
-    for i in range(1, n):
+def insertionSort(array, num):
+    for i in range(1, num):
         key = array[i]
         j = i-1
         while j >= 0 and key < array[j]:

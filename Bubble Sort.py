@@ -7,19 +7,19 @@
 # an optimized algorithm will give
 # O(n)
 
-def bubbleSort(array, n):
-    for i in range(n):
-        for j in range(n-i-1):
+def bubbleSort(array, num):
+    for i in range(num):
+        for j in range(num-i-1):
             if array[j] < array[j+1]:
                 continue
             else:
                 array[j], array[j+1] = array[j+1], array[j]
     return array
 
-def bubbleSortOptimized(array, n):
-    for i in range(n):
+def bubbleSortOptimized(array, num):
+    for i in range(num):
         swapped = False
-        for j in range(n-i-1):
+        for j in range(num-i-1):
             if array[j] < array[j+1]:
                 continue
             else:
@@ -31,7 +31,7 @@ def bubbleSortOptimized(array, n):
 
 
 
-a = [10,1,3,7,5]
+a = [10, 1, 3, 7, 5]
 b = a
 print(a)
 print(b)
